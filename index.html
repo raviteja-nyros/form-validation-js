@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FormvalI</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/custom.css">
+    <script src="styles/js/modernizr-2.8.3.min.js"></script>
+    <script src="styles/js/bootstrap.min.js"></script>
+    <script src="styles/js/jquery.min.js"></script>
+    <script src="styles/js/form.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>FOURSQUARE</strong></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Foursquare for Enterprise</a></li>
+        <li><a href="#">About Foursquare</a></li>
+        <li><a href="#">Get the App</a></li>
+        <li><a href="#" type="submit" class="btn2">Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="btn3" data-toggle="dropdown" id="myBtn" role="button" aria-haspopup="true" aria-expanded="false">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="myModal" class="modal">
+   <div class="modal-content">
+     <div class="modal-body">
+       <span class="close">×</span>
+       <div class="parallax"></div>
+        <form id="myForm" onsubmit="return myFunction()" method="post" action="#">
+          <img src="styles/image/modal-signup-logo@2x-2eb78182d6227236c09d7581bbfef956.png" class="logo" alt="Image">
+          <h1>Foursquare learns what you like and leads<br>you to places you'll love.</h1>
+       <div class="alert alert-danger">
+             <p id="myForm_validation"></p>
+       </div>
+       <div class="row">
+           <div class="col-sm-6">
+               <p class="text">Email*</p>
+               <div class="dec">
+                  <input type="text" class="form-control input-lg" id="email" onclick="myFunction1()" onblur="myFunction2()">
+               </div><br>
+               <div class="alert alert-danger">
+                   <p id="email_validation" ></p>
+               </div>
+           </div>
+        <div class="col-sm-6">
+               <p class="text">Password*</p>
+                <div class="dec1">
+                   <input type="password" class="form-control input-lg" id="pas" onclick="myFunction3()" onblur="myFunction4()">
+                </div><br>
+                <div class="alert alert-danger">
+                   <p id="pas_validation"></p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+          <div class="col-sm-3">
+                <p class="text">First name*:</p>
+                  <div class="dec2">
+                    <input type="text"  class="form-control input-lg"  id="fname" onclick="myFunction5()" onblur="myFunction6()">
+                  </div><br>
+                  <div class="alert alert-danger">
+                   <p id="fname_validation"></p>
+                  </div>
+          </div>
+          <div class="col-sm-3">
+               <p class="text">Last name</p>
+                <div class="dec3">
+                 <input type="text"  class="form-control input-lg" >
+                </div>
+          </div>
+          <div class="col-sm-6">
+               <p class="text" for="bir"> Birthday*</p>
+                <div class="dec4">
+                  <input type="text" placeholder="DD/MM/YYYY" class="form-control input-lg date " id="bir" onclick="myFunction7()" onblur="myFunction8()" maxlength="10" >
+                </div><br>
+              <div class="alert alert-danger">
+                   <p id="bir_validation"></p>
+              </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-sm-6">
+                <p class="text">Gender *</p>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="gender" value="male">&nbsp;&nbsp;Male
+                <input type="radio" name="gender" value="female" >&nbsp;Female&nbsp;
+                <input type="radio" name="gender" value="female" >&nbsp;Rather not say
+          </div>
+          <div class="col-sm-6">
+                <p class="text">Profile Photo</p>
+                <input type="file" name="picture" class="button1">
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-sm-12">
+                <button type="submit"  class="btn1" value="submit">SUBMIT</button>
+          </div>
+       </div>
+        </form>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+</body>
+</head>

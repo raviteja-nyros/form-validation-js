@@ -1,0 +1,189 @@
+body{
+    color:grey !important; 
+    background-image: url("../image/World_3D_Grey.png")!important;
+    background-repeat: no-repeat !important; 
+}
+.jumbotron{
+	background-color: white !important;
+}
+h1{
+	font-size: 36px !important;
+	padding: 0px 10px 10px 10px !important;
+	text-align: center !important;
+	margin: 0 auto !important;
+	color:grey !important;
+}
+nav{
+    background-color:#0080ff !important;
+}
+a{
+    color:white !important;
+    text-decoration: none !important;
+}
+.text{
+    text-align:center!important;
+    margin: 0 auto !important;
+    font-size: 18px !important;
+    padding: 20px 0px 5px 0px !important;
+    color:grey !important;
+}
+
+.logo{
+	padding: 0% 0% 0% 46% !important;
+  margin:0 auto !important; 
+}
+.btn1{
+    padding: 12px 20px !important;
+    font-size: 18px !important;
+    line-height: 1.3333333 !important;
+    border-radius: 6px !important;
+    margin-left: 45% !important;
+    margin-top: 5% !important;
+    background-color: #3762B6 !important;
+    color:white !important;
+}
+.btn2{
+    padding: 5px 25px 10px 20px !important;
+    font-size: 18px !important;
+    border-radius: 3px !important;
+    margin-left: 10px !important;
+    margin-top: 5px !important;
+    background-color: #0080ff !important;
+    color:white !important;
+    border:1px solid aqua !important;
+}
+.btn3{
+    padding: 5px 25px 10px 20px  !important;
+    font-size: 18px !important;
+    border-radius: 3px !important;
+    background-color:#ffbf00 !important;
+    color:white !important;
+    margin-left: 10px !important;
+    margin-top: 5px !important;
+    border:1px solid aqua !important;
+}
+.dec{
+    background-image: url("../image/modal-signup-form-email@2x-6e9313e9eb46a98633788c493fe4cdb7.png")!important;
+    background-size: 30px 30px !important;
+    box-shadow: none;
+    border-color: #efeff4;
+    background: #efeff4;
+    background-position: 9px 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 15px 15px 15px 40px;
+    position: relative;
+}
+.dec1{
+    background-image: url("../image/modal-signup-form-password@2x-94c33376dc54ba38e9569cf703a80e33.png")!important;
+    background-size: 30px 30px !important;
+    box-shadow: none;
+    border-color: #efeff4;
+    background: #efeff4;
+    background-position: 9px 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 15px 15px 15px 40px;
+    position: relative;
+}
+.dec2{
+    background-image: url("../image/modal-signup-form-firstname@2x-3c7c8d485595e6dc4ecab8c38319e298.png")!important;
+    background-size: 30px 30px !important;
+    box-shadow: none;
+    border-color: #efeff4;
+    background: #efeff4;
+    background-position: 9px 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 15px 15px 15px 40px;
+    position: relative;
+}
+.dec3{
+    background-size: 30px 30px !important;
+    box-shadow: none;
+    border-color: #efeff4;
+    background: #efeff4;
+    background-position: 9px 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 15px 15px 15px 40px;
+    position: relative;
+}
+.dec4{
+    background-image: url("../image/modal-signup-form-birthday@2x-951d46528bfc7e9435747154b840325c.png")!important;
+    background-size: 30px 30px  !important;
+    box-shadow: none;
+    border-color: #efeff4;
+    background: #efeff4;
+    background-position: 9px 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 15px 15px 15px 40px;
+    position: relative;
+    width: 100%;
+}
+.input-lg{
+	background-color: #efeff4 !important;
+	border: none !important;
+    box-shadow: none !important;
+}
+.input-lg:hover{
+    box-shadow: none !important;
+}
+p{
+  text-align: center !important;  
+  color:white !important; 
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-body{
+    padding: 10px 16px;
+}
+.alert{
+    font-size: 15px !important;
+    color:silver !important;
+    border:1px !important;
+    padding: 0px 0px 0px 0px!important;
+    text-align: justify !important;
+    background-color: #ff6666 !important;
+    right:15px !important;
+
+}
